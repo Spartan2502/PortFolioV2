@@ -64,7 +64,7 @@ img {
     background-color: #161616c4;
     margin-bottom   : 20px;
     padding         : 10vh;
-    margin-top: 10vh;
+    margin-top      : 10vh;
 }
 
 .about-me-content {
@@ -116,29 +116,41 @@ a.download-button {
 a.download-button:hover {
     background-color: #0db8a2;
 }
+
 /* redes sociales */
 .social-box {
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
+    display        : flex;
+    justify-content: space-around;
+    margin-top     : 20px;
 }
 
 .status {
-    width: 20px;
-    height: 20px;
+    width        : 20px;
+    height       : 20px;
     border-radius: 50%;
-    display: inline-block;
-    margin-top: 10px;
+    display      : inline-block;
+    margin-top   : 10px;
 }
 
-#discord-status, #twitter-status, #whatsapp-status {
-    background-color: gray; /* Puedes cambiar el color de fondo predeterminado */
+#discord-status,
+#twitter-status,
+#whatsapp-status {
+    background-color: gray;
+    /* Puedes cambiar el color de fondo predeterminado */
 }
 
 /* Define colores de estado específicos */
-#discord-status.online { background-color: #1da1f2; }
-#twitter-status.online { background-color: #1da1f2; }
-#whatsapp-status.online { background-color: #25d366; }
+#discord-status.online {
+    background-color: #1da1f2;
+}
+
+#twitter-status.online {
+    background-color: #1da1f2;
+}
+
+#whatsapp-status.online {
+    background-color: #25d366;
+}
 
 /* redes sociales */
 /* contador */
@@ -166,24 +178,7 @@ a.download-button:hover {
     animation       : pulse 1s infinite;
 }
 
-@keyframes pulse {
-    0% {
-        transform : scale(1);
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    }
-
-    50% {
-        transform : scale(1.1);
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
-    }
-
-    100% {
-        transform : scale(1);
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    }
-}
 /* contador */
-
 .experience,
 .education,
 .languages,
@@ -259,6 +254,7 @@ a.download-button:hover {
     align-items    : flex-start;
 }
 
+
 .text-details {
     flex-grow: 1;
     min-width: 70%;
@@ -287,6 +283,7 @@ a.download-button:hover {
     transform: scale(1.1);
 }
 
+/* educacion */
 /* lenguajes */
 .languages .language-list {
     list-style: none;
@@ -389,8 +386,22 @@ a.download-button:hover {
 }
 
 /* media querys */
-/* Estilos responsivos */
 @media only screen and (max-width: 768px) {
+
+    .container {
+        text-align: center;
+    }
+
+    .social-box {
+        flex-direction: column;
+        margin-top    : 10px;
+        align-items   : center;
+    }
+
+    .about-me {
+        margin-top: 4vh;
+    }
+
     .container {
         max-width: 90%;
     }
@@ -401,7 +412,6 @@ a.download-button:hover {
 
     .about-me-content {
         flex-direction: column-reverse;
-        /* Cambia la dirección de la columna para poner la imagen arriba */
     }
 
     .education-item {
@@ -411,6 +421,16 @@ a.download-button:hover {
     .skills-item {
         flex     : 1 0 calc(50% - 20px);
         max-width: calc(50% - 20px);
+    }
+
+    .education-details {
+        flex-direction: column-reverse;
+        align-items   : center;
+    }
+
+    .text-details {
+        min-width    : 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -632,5 +652,22 @@ a.download-button:hover {
 
     100% {
         text-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5), -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform : scale(1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        transform : scale(1.1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    }
+
+    100% {
+        transform : scale(1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     }
 }
