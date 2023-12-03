@@ -4,78 +4,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Página con Animación de Fondo</title>
+    <meta name="keywords"
+        content="desarrollador backend, programador, ingeniero de software, tecnologías de servidor, Node.js, Python, PHP, desarrollo de API, bases de datos SQL, NoSQL">
+    <meta name="robots" content="index, follow">
+    <!-- <link rel="shortcut icon" href="/Assets/svg/huskypc.svg" type="image/x-icon"> -->
+    <meta name="theme-color" content="black">
+    <link rel="apple-touch-icon" href="Assets/svg/huskypc.svg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="manifest" href="manifest.json" />
+    <title>Victor Alejandro</title>
 </head>
 
 <body>
-
     <div class="container">
-        <section>
-            <h1>VICTOR</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui, dolor ab suscipit consequatur aspernatur
-                vel quis saepe tempora sed, beatae nostrum soluta quibusdam distinctio fugit? Necessitatibus vitae
-                pariatur omnis.
-                Porro soluta, facilis sapiente consequuntur reprehenderit officia. Harum ratione quaerat doloribus ut
-                commodi exercitationem placeat odit voluptatum quos! Ea itaque eligendi ipsam temporibus quia ad et,
-                explicabo nostrum obcaecati labore.
-                Maiores facere rem incidunt illum nostrum necessitatibus voluptate consequatur, aperiam numquam nihil
-            </p>
+
+        <section class="about-me">
+            <div class="about-me-content">
+                <div class="about-me-text">
+                    <h2>About Me</h2>
+                    <p>Hola!, Soy Víctor Alejandro García Díaz. oy un apasionado desarrollador con habilidades
+                        destacadas en diversas áreas, incluyendo desarrollo de videojuegos, desarrollo web
+                        multiplataforma, modelado 3D y dibujo digital</p>
+                    <a href="/src/portafolio/Curriculum.pdf" download="VictorAlejandro.pdf"
+                        class="download-button">Descargar CV</a>
+                    <div class="social-box" id="discord-box"
+                        onclick="redirectTo('https://www.facebook.com/profile.php?id=100004528123181')">
+                        <h3>Facebook</h3>
+                        <div class="status" id="discord-status"></div>
+                    </div>
+
+                    <div class="social-box" id="twitter-box" onclick="redirectTo('https://twitter.com/Aklex_24')">
+                        <h3>X(twitter)</h3>
+                        <div class="status" id="twitter-status"></div>
+                    </div>
+
+                    <div class="social-box" id="whatsapp-box" onclick="openWhatsApp()">
+                        <h3>WhatsApp</h3>
+                        <div class="status" id="whatsapp-status"></div>
+                    </div>
+                </div>
+                <div class="about-me-image">
+                    <img src="/src/imagenes/image.psd.png" alt="Tu Nombre">
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h1>VICTOR</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui, dolor ab suscipit consequatur aspernatur
-                vel quis saepe tempora sed, beatae nostrum soluta quibusdam distinctio fugit? Necessitatibus vitae
-                pariatur omnis.
-                Porro soluta, facilis sapiente consequuntur reprehenderit officia. Harum ratione quaerat doloribus ut
-                commodi exercitationem placeat odit voluptatum quos! Ea itaque eligendi ipsam temporibus quia ad et,
-                explicabo nostrum obcaecati labore.
-                Maiores facere rem incidunt illum nostrum necessitatibus voluptate consequatur, aperiam numquam nihil
-            </p>
+        <section class="reveal">
+            <div id="countdown-container">
+                <h2>¡Contador para Navidad!</h2>
+                <div id="countdown"></div>
+            </div>
         </section>
 
-        <section>
-            <h1>VICTOR</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui, dolor ab suscipit consequatur aspernatur
-                vel quis saepe tempora sed, beatae nostrum soluta quibusdam distinctio fugit? Necessitatibus vitae
-                pariatur omnis.
-                Porro soluta, facilis sapiente consequuntur reprehenderit officia. Harum ratione quaerat doloribus ut
-                commodi exercitationem placeat odit voluptatum quos! Ea itaque eligendi ipsam temporibus quia ad et,
-                explicabo nostrum obcaecati labore.
-                Maiores facere rem incidunt illum nostrum necessitatibus voluptate consequatur, aperiam numquam nihil
-            </p>
+
+        <section class="experience reveal">
+            <h2>Experiencia</h2>
+            <div class="experience-item">
+                <h3>Desarrollo de videojuegos</h3>
+                <p>Universidad Tecnologia del norte de Aguascalientes</p>
+                <p>[01/09/2023] - [09/12/2023]</p>
+                <p>Encargado de la programación y diseño de videojuegos utilizando el motor gráfico “Unity”. Colaboré
+                    estrechamente con equipos multidisciplinarios para lograr la integración fluida de gráficos 3D,
+                    mecánicas de juego y sonido. Desarrollé y mantuve sistemas de juego, implementé nuevas
+                    características y optimicé el rendimiento para garantizar una experiencia de usuario excepcional.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h1>VICTOR</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui, dolor ab suscipit consequatur aspernatur
-                vel quis saepe tempora sed, beatae nostrum soluta quibusdam distinctio fugit? Necessitatibus vitae
-                pariatur omnis.
-                Porro soluta, facilis sapiente consequuntur reprehenderit officia. Harum ratione quaerat doloribus ut
-                commodi exercitationem placeat odit voluptatum quos! Ea itaque eligendi ipsam temporibus quia ad et,
-                explicabo nostrum obcaecati labore.
-                Maiores facere rem incidunt illum nostrum necessitatibus voluptate consequatur, aperiam numquam nihil
-            </p>
+        <section class="education reveal">
+            <h2>Educación</h2>
+            <div class="education-item">
+                <div class="education-details">
+                    <div class="text-details">
+                        <h3>Licenciatura en INGENIERÍA EN DESARROLLO Y GESTIÓN DE SOFTWARE</h3>
+                        <h3>Universidad Tecnologica Del Norte de Aguascalientes</h3>
+                        <p class="education-duration">2020-2024</p>
+                    </div>
+                    <a href="https://www.utna.edu.mx/utna/" target="_blank">
+                        <img src="/src/imagenes/UTNA.png" alt="Universidad Tecnologica Del Norte de Aguascalientes">
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h1>VICTOR</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui, dolor ab suscipit consequatur aspernatur
-                vel quis saepe tempora sed, beatae nostrum soluta quibusdam distinctio fugit? Necessitatibus vitae
-                pariatur omnis.
-                Porro soluta, facilis sapiente consequuntur reprehenderit officia. Harum ratione quaerat doloribus ut
-                commodi exercitationem placeat odit voluptatum quos! Ea itaque eligendi ipsam temporibus quia ad et,
-                explicabo nostrum obcaecati labore.
-                Maiores facere rem incidunt illum nostrum necessitatibus voluptate consequatur, aperiam numquam nihil
-            </p>
+
+
+        <section class="languages reveal">
+            <h2>LEnguajes</h2>
+            <ul class="language-list">
+                <li>
+                    <span class="language-name">Español - Nativo</span>
+                    <div class="progress-bar">
+                        <div class="progress-level" style="width: 100%;">Nativo</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="language-name">Inglés - B2 (en espera de certificado)</span>
+                    <div class="progress-bar">
+                        <div class="progress-level" style="width: 70%;">B2</div>
+                    </div>
+                </li>
+            </ul>
         </section>
+
+
+        <section class="skills reveal">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-item reveal">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-device-gamepad-2" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 5h3.5a5 5 0 0 1 0 10h-5.5l-4.015 4.227a2.3 2.3 0 0 1 -3.923 -2.035l1.634 -8.173a5 5 0 0 1 4.904 -4.019h3.4z" />
+                        <path d="M14 15l4.07 4.284a2.3 2.3 0 0 0 3.925 -2.023l-1.6 -8.232" />
+                        <path d="M8 9v2" />
+                        <path d="M7 10h2" />
+                        <path d="M14 10h2" />
+                    </svg>
+                    <p>Desarollo de Videojuegos</p>
+                </div>
+                <div class="skills-item reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world-www" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4" />
+                        <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4" />
+                        <path d="M12.5 3a16.989 16.989 0 0 1 1.828 4" />
+                        <path d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4" />
+                        <path d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4" />
+                        <path d="M12.5 21a16.989 16.989 0 0 0 1.828 -4" />
+                        <path d="M2 10l1 4l1.5 -4l1.5 4l1 -4" />
+                        <path d="M17 10l1 4l1.5 -4l1.5 4l1 -4" />
+                        <path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4" />
+                    </svg>
+                    <p>Desarollo web</p>
+                </div>
+                <div class="skills-item reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-blender"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 14m-6 0a6 5 0 1 0 12 0a6 5 0 1 0 -12 0" />
+                        <path d="M15 14m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                        <path d="M3 16l9 -6.5" />
+                        <path d="M6 9h9" />
+                        <path d="M13 5l5.65 5" />
+                    </svg>
+                    <p>Modelado 3d</p>
+                </div>
+                <div class="skills-item reveal">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" <svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-scribble" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 15c2 3 4 4 7 4s7 -3 7 -7s-3 -7 -6 -7s-5 1.5 -5 4s2 5 6 5s8.408 -2.453 10 -5" />
+                    </svg>
+                    <p>Dibujo Digital</p>
+                </div>
+                <div class="skills-item reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-vscode" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M16 3v18l4 -2.5v-13z" />
+                        <path
+                            d="M9.165 13.903l-4.165 3.597l-2 -1l4.333 -4.5m1.735 -1.802l6.932 -7.198v5l-4.795 4.141" />
+                        <path d="M16 16.5l-11 -10l-2 1l13 13.5" />
+                    </svg>
+                    <p>Programacion Backend</p>
+                </div>
+                <div class="skills-item reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-figma" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
+                        <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />
+                    </svg>
+                    <p>Programacion Frontend</p>
+                </div>
+                <div class="skills-item reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                        <path d="M7.5 8h3v8l-2 -1" />
+                        <path
+                            d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                    </svg>
+                    <p>Javascript</p>
+                </div>
+                <div class="skills-item reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"
+                        stroke="white">
+                        <path
+                            d="M 25 2 C 24.285156 2 23.574219 2.179688 22.933594 2.539063 L 6.089844 12.003906 C 4.808594 12.726563 4 14.074219 4 15.535156 L 4 34.464844 C 4 35.929688 4.808594 37.277344 6.089844 38 L 22.933594 47.460938 C 24.214844 48.183594 25.785156 48.183594 27.066406 47.460938 L 43.910156 38 C 45.195313 37.277344 46 35.925781 46 34.464844 L 46 15.535156 C 46 14.074219 45.191406 12.726563 43.910156 12.003906 L 27.066406 2.539063 C 26.425781 2.179688 25.714844 2 25 2 Z M 25 4 C 25.375 4 25.753906 4.09375 26.089844 4.28125 L 42.933594 13.746094 C 43.601563 14.125 44 14.804688 44 15.535156 L 44 34.464844 C 44 35.195313 43.601563 35.875 42.929688 36.253906 L 26.089844 45.71875 C 25.417969 46.09375 24.582031 46.09375 23.910156 45.71875 L 7.070313 36.253906 C 6.398438 35.875 6 35.199219 6 34.464844 L 6 15.535156 C 6 14.804688 6.398438 14.125 7.070313 13.746094 L 23.910156 4.28125 C 24.246094 4.09375 24.625 4 25 4 Z M 25 12 C 17.839844 12 12 17.839844 12 25 C 12 32.160156 17.839844 38 25 38 C 29.089844 38 32.886719 36.09375 35.339844 32.863281 L 36.023438 31.960938 L 29.96875 28.453125 L 29.421875 29.046875 C 28.292969 30.28125 26.691406 31 25 31 C 21.683594 31 19 28.316406 19 25 C 19 21.683594 21.683594 19 25 19 C 26.691406 19 28.292969 19.71875 29.421875 20.953125 L 29.96875 21.546875 L 36.023438 18.039063 L 35.339844 17.136719 C 32.886719 13.90625 29.089844 12 25 12 Z M 25 14 C 28.074219 14 30.886719 15.316406 32.945313 17.511719 L 30.203125 19.097656 C 28.757813 17.832031 26.960938 17 25 17 C 20.597656 17 17 20.597656 17 25 C 17 29.402344 20.597656 33 25 33 C 26.960938 33 28.757813 32.167969 30.203125 30.902344 L 32.945313 32.488281 C 30.886719 34.683594 28.074219 36 25 36 C 18.925781 36 14 31.074219 14 25 C 14 18.925781 18.925781 14 25 14 Z M 35 20 L 35 22 L 33 22 L 33 24 L 35 24 L 35 26 L 33 26 L 33 28 L 35 28 L 35 30 L 37 30 L 37 28 L 39 28 L 39 30 L 41 30 L 41 28 L 43 28 L 43 26 L 41 26 L 41 24 L 43 24 L 43 22 L 41 22 L 41 20 L 39 20 L 39 22 L 37 22 L 37 20 Z M 37 24 L 39 24 L 39 26 L 37 26 Z">
+                        </path>
+                    </svg>
+                    <p>C#</p>
+                </div>
+            </div>
+        </section>
+
+
     </div>
-
-
-
-    <div class="scanlines"></div>
-
+    <section>
+        <div class="scanlines"></div>
+    </section>
+</body>
+</div>
+<div class="scanlines"></div>
+<script src="/scripts/scrollreveal.js"></script>
+<script src="/script.js"></script>
 </body>
 
 </html>
