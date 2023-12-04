@@ -61,13 +61,9 @@ function openWhatsApp() {
     const phoneNumber = '+5214581122218';
     const message = 'Hola, estoy visitando tu portafolio.';
 
-    // Construye la URL de WhatsApp con el número y el mensaje
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-    // Abre la ventana de WhatsApp en una nueva pestaña
     window.open(whatsappUrl, '_blank');
 }
-
-// Resto del código para actualizar el estado sigue siendo el mismo
 
 
