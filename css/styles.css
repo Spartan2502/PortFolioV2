@@ -386,6 +386,25 @@ a.download-button:hover {
 }
 
 /* media querys */
+
+
+@media (max-width: 991px) {
+    .container {
+        text-align: center;
+    }
+
+    .social-box {
+        flex-direction: column;
+        margin-top    : 10px;
+        align-items   : center;
+    }
+
+    .social-box a {
+        margin-bottom: 10px;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
 
     .container {
